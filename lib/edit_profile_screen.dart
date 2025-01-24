@@ -52,7 +52,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     });
 
     try {
-      // Actualiza el documento del usuario en la colección 'users'
+      // Actualiza el documento del usuario en la colección users
       await _firestore.collection('users').doc(user.uid).update({
         'username': _nameController.text.trim(),
         'bio': _bioController.text.trim(),
